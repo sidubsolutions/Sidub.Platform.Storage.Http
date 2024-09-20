@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyName>Sidub.Platform.Storage.Http</AssemblyName>
+		<RootNamespace>Sidub.Platform.Storage</RootNamespace>
+
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+
+		<!-- Workaround: https://github.com/dotnet/sourcelink - Azure Repos not supporting symbol packages -->
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\icon.png" Pack="true" PackagePath="\" Visible="False" />
+		<None Include="..\LICENSE.txt" Pack="true" PackagePath="\" Visible="False" />
+		<None Include="..\LICENSE-AGPLV3.txt" Pack="true" PackagePath="\" Visible="False" />
+		<None Include="..\LICENSE-PROPRIETARY.txt" Pack="true" PackagePath="\" Visible="False" />
+		<None Include="..\PRIVACY.txt" Pack="true" PackagePath="\" Visible="False" />
+		<None Include="..\TERMS.txt" Pack="true" PackagePath="\" Visible="False" />
+		<None Include="..\CONTRIBUTING.txt" Pack="true" PackagePath="\" Visible="False" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" Visible="False" />
+
+		<PackageReference Include="Flurl" Version="4.0.0" />
+		<PackageReference Include="Flurl.Http" Version="4.0.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+		<PackageReference Include="Sidub.Platform.Authentication" Version="1.0.17" />
+		<PackageReference Include="Sidub.Platform.Filter" Version="1.1.10" />
+		<PackageReference Include="Sidub.Platform.Storage" Version="1.0.19" />
+	</ItemGroup>
+
+</Project>

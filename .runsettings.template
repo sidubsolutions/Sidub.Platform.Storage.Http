@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<RunConfiguration>
+		<EnvironmentVariables>
+			<CRM_URL></CRM_URL>
+			<STORAGETABLE_URL></STORAGETABLE_URL>
+			<STORAGEQUEUE_URL></STORAGEQUEUE_URL>
+			<STORAGEBLOB_URL></STORAGEBLOB_URL>
+		</EnvironmentVariables>
+	</RunConfiguration>
+</RunSettings>
